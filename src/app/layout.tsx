@@ -1,5 +1,3 @@
-import { StyleProvider } from "./StyleProvider";
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -8,7 +6,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <StyleProvider>{children}</StyleProvider>
+        <p>(reload the page to see the effect)</p>
+        <>{children}</>
       </body>
     </html>
   );
